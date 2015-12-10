@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Test sockets</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+	<script src='/socket.io/socket.io.js'></script>
+	<script src='main.js'></script>
+	<script src="app.js"></script>
+</head>
+<body ng-controller="MyCtrl">
+	<h1>{{sock}}</h1>
+	<h1>Test</h1>
+	<div id="msg"></div>
+	<br>
+	<form onsubmit="return addMessage(this)">
+		<input type="text" id="username" placeholder="Nombre">
+		<input type="text" id="text" placeholder="Mensaje">
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
