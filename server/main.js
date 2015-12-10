@@ -44,7 +44,7 @@ let watcher = mysqlEventWatcher.add(
  
      //row updated 
     if (oldRow !== null && newRow !== null) {
-      io.sockets.emit('count', "Hubo un Cambio")
+      io.sockets.emit('count', "change")
     }
     //console.log(`Cambio3`)
   }
